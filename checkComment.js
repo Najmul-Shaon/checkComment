@@ -8,17 +8,11 @@ checkBtn.addEventListener("click", function () {
   const lastString = commentString[lengthOfCommentString - 1];
   console.log(commentString.length);
   if (commentString.length == 0) {
-    // alert("Please enter a valid comment!");
+    alert("Please enter a valid comment!");
   }
-//   const extraElement = document.getElementById("h3");
-//   extraElement.remove();
-
-  // this
-  /** this is multiple comment*/
   if (firstString == "/" && secondString == "/" && thirdString != "/") {
     console.log("This is single line comment.");
     const resultArea = document.getElementById("resultArea");
-
     const newH1 = document.createElement("h3");
     newH1.setAttribute("id", "h3");
     newH1.setAttribute("id", "h3");
