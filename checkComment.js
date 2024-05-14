@@ -10,13 +10,18 @@ checkBtn.addEventListener("click", function () {
   if (commentString.length == 0) {
     // alert("Please enter a valid comment!");
   }
+//   const extraElement = document.getElementById("h3");
+//   extraElement.remove();
 
   // this
   /** this is multiple comment*/
   if (firstString == "/" && secondString == "/" && thirdString != "/") {
     console.log("This is single line comment.");
     const resultArea = document.getElementById("resultArea");
+
     const newH1 = document.createElement("h3");
+    newH1.setAttribute("id", "h3");
+    newH1.setAttribute("id", "h3");
     newH1.innerText = `${commentString}: This is single line comment.`;
     resultArea.appendChild(newH1);
     console.log(resultArea);
@@ -30,6 +35,7 @@ checkBtn.addEventListener("click", function () {
     console.log("This is multi line comment.");
     const resultArea = document.getElementById("resultArea");
     const newH1 = document.createElement("h3");
+    newH1.setAttribute("id", "h3");
     newH1.innerText = `${commentString}: This is multi line comment.`;
     resultArea.appendChild(newH1);
     console.log(resultArea);
@@ -38,6 +44,7 @@ checkBtn.addEventListener("click", function () {
     console.log("This is not a commnent.");
     const resultArea = document.getElementById("resultArea");
     const newH1 = document.createElement("h3");
+    newH1.setAttribute("id", "h3");
     newH1.innerText = `${commentString}: This is not a comment.`;
     resultArea.appendChild(newH1);
     console.log(resultArea);
